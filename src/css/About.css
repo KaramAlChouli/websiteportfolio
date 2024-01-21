@@ -2,7 +2,7 @@
   max-width: 1000px;
   margin: 20px auto;
   padding: 20px;
-  color: #eca1a1;
+  color: #44faae;
   background-color: #24251e;
   border-radius: 8px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
@@ -19,8 +19,8 @@
 }
 
 h2 {
-  font-size: rem;
-  color: #e7594f;
+  font-size: 2rem;
+  color: #49ec8d;
   margin-bottom: 10px;
   text-align: center; /* Center the h2 elements */
   
@@ -33,4 +33,34 @@ h2 {
 
 .about-section ul li {
   margin-bottom: 5px;
+}
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+  .about-container {
+    max-width: 90%; /* Smaller max-width for better fit on mobile screens */
+    padding: 15px; /* Adjust padding for mobile */
+    margin: 10px auto; /* Adjust margin for mobile */
+    /* ... other styles you want to adjust for mobile ... */
+  }
+
+  .about-body {
+    grid-template-columns: 1fr; /* Single column layout for mobile */
+    gap: 15px; /* Adjust gap for mobile */
+    /* ... other styles you want to adjust for mobile ... */
+  }
+
+  h2 {
+    font-size: 1.5rem; /* Smaller font size for better readability on mobile */
+    /* ... other styles you want to adjust for mobile ... */
+  }
+
+  .about-section ul {
+    padding-left: 15px; /* Adjust padding for mobile */
+    /* ... other styles you want to adjust for mobile ... */
+  }
+
+  .about-section ul li {
+    margin-bottom: 10px; /* Slightly increased margin for better readability on mobile */
+    /* ... other styles you want to adjust for mobile ... */
+  }
 }

@@ -55,3 +55,41 @@
   transform: scale(1.1); /* Slightly larger scale on hover */
   background-color: #196ce9;
 }
+@media screen and (max-width: 768px) {
+  .phone-container {
+    width: 250px; /* Smaller width for mobile */
+    height: 350px; /* Smaller height for mobile */
+    margin: 15px auto; /* Adjust margin for mobile */
+    border-radius: 20px; /* Adjust border-radius for mobile */
+    /* ... other styles you want to adjust for mobile ... */
+  }
+
+  .phone-screen {
+    padding: 20px; /* Adjust padding for mobile */
+    /* ... other styles you want to adjust for mobile ... */
+  }
+
+  .app-grid {
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    gap: 10px; /* Adjust gap for mobile */
+    /* ... other styles you want to adjust for mobile ... */
+  }
+
+  .app-icon {
+    padding: 10px; /* Adjust padding for mobile */
+    border-radius: 10px; /* Adjust border-radius for mobile */
+    font-size: 14px; /* Adjust font-size for mobile */
+    width: 40px; /* Adjust width for mobile */
+    height: 40px; /* Adjust height for mobile */
+    /* ... other styles you want to adjust for mobile ... */
+  }
+
+  .section-content {
+    padding: 15px; /* Adjust padding for mobile */
+    border-radius: 8px; /* Adjust border-radius for mobile */
+    margin-top: 20px; /* Adjust margin-top for mobile */
+    /* ... other styles you want to adjust for mobile ... */
+  }
+  
+}

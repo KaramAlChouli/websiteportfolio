@@ -84,3 +84,56 @@
     height: auto;
     
 }
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+    .projects-container {
+        padding: 15px; /* Slightly reduced padding */
+        /* ... other styles you want to adjust for mobile ... */
+    }
+
+    .projects-filter {
+        width: 100%; /* Full width on mobile for better use of space */
+        margin-bottom: 15px; /* Adjust margin for mobile */
+        padding: 8px; /* Adjust padding for mobile */
+        /* ... other styles you want to adjust for mobile ... */
+    }
+  
+    .project-list {
+        gap: 15px; /* Reduced gap for better spacing on mobile */
+        /* ... other styles you want to adjust for mobile ... */
+    }
+
+    .project-card {
+        width: 100%; /* Full width on mobile to utilize space better */
+        height: auto; /* Auto height to prevent clipping */
+        padding: 10px; /* Reduced padding for mobile */
+        /* ... other styles you want to adjust for mobile ... */
+    }
+  
+    .project-card h3 {
+        font-size: 1.5rem; /* Smaller font size for mobile */
+        /* ... other styles you want to adjust for mobile ... */
+    }
+  
+    .project-card p {
+        font-size: 1rem; /* Smaller font size for mobile */
+        /* ... other styles you want to adjust for mobile ... */
+    }
+  
+    .project-languages {
+        gap: 3px; /* Reduced gap to prevent clipping */
+        /* ... other styles you want to adjust for mobile ... */
+    }
+
+    .project-languages li {
+        font-size: 0.8rem; /* Smaller font size to fit better */
+        padding: 3px; /* Reduced padding for mobile */
+        /* ... other styles you want to adjust for mobile ... */
+    }
+
+    .github-icon {
+        width: 20px; /* Slightly smaller icon for mobile */
+        height: 20px;
+        /* ... other styles you want to adjust for mobile ... */
+    }
+}
