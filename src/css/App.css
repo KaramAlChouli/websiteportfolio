@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #000000; 
+    color: #e0e0e0; 
+}
+@keyframes bounce {
+    0%, 100% {
+        transform: translateX(-650px); /* Start and end at the original position */
+    }
+    50% {
+        transform: translateX(650px); /* Move right by 400px */
+    }
+}
+
+.bouncing-text {
+    position: relative;
+    animation: bounce 15s linear infinite;
+    font-size: 3rem;
+}
+
+
+
+.App {
+    text-align: center;
+}
+  
+.App-header {
+    background-color: #0e61dd; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 1rem;
+}
+  
+.navigation ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+  
+.navigation li {
+    margin: 0 10px;
+    color: #e0e0e0; 
+    cursor: pointer;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+  
+.navigation li:hover {
+    color: #bb86fc;
+}
+  
+.Link {
+    text-decoration: none;
+    color: inherit; 
+}
+  
+section {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e0e0e0;
+    background-color: near-gradient(270deg, #ebc004, rgb(224, 217, 111), rgb(219, 235, 1));
+    min-height: calc(75vh - 2rem);
+}
+  
+.home-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+  
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 60%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+  
+.intro-text {
+    max-width: 600px;
+    text-align: left;
+}
+  
+@media (max-width: 768px) {
+  .home-content {
+      flex-direction: column;
+      text-align: center;
+  }
+  
+  .profile-pic {
+      width: 300px;
+      height: 300px;
+      margin-right: 0;
+      margin-bottom: 10px;
+  }
+  
+  .intro-text {
+      max-width: 100%;
+      text-align: center;
+  }
+
+}

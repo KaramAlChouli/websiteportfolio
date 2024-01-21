@@ -1,0 +1,120 @@
+.Header {
+    display: flex;
+    justify-content: center; /* Align items horizontally to the center */
+    align-items: center; /* Align items vertically to the center */
+    background-color: #ffffff;
+    background: linear-gradient(270deg, #34e0ad, rgb(121, 248, 104), rgb(122, 233, 141));
+    background-size: 200% 200%; /* Enlarge the gradient */
+    animation: GradientAnimation 5s ease infinite; /* Apply the animation */
+    color: #ffffff;
+    padding: 2.25rem;
+    margin-bottom: 0;
+    flex-wrap: wrap; /* Allows items to wrap in smaller screens */
+
+}
+
+@keyframes GradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+.header-name {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center; /* Center the text */
+    transition: color 0.5s;
+    
+}
+
+.header-nav .nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center; /* Center the navigation items */
+}
+
+.header-nav .nav-item a { 
+    font-size: 1.5rem;
+    margin-left: 1.1rem;
+    cursor: pointer;
+    transition: color 0.3s;
+    text-decoration: none;
+    color: #ffffff;
+    position: relative;
+    transition: color 0.5s;
+}
+.header-nav .nav-item a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background: linear-gradient(270deg, #050031, #3a0f0ffa, #12381a);
+    background-size: 200% 200%; /* Enlarge the gradient */
+    animation: GradientAnimation 8s ease infinite; /* Apply the animation */
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: all 0.3s ease-in-out; /* Animate all properties */
+    width: 0%; /* Initially, the line is not visible */
+    visibility: hidden; /* Hide the line */
+}
+.header-nav .nav-item a.active::after {
+    width: 100%; /* Full width for active item */
+    visibility: visible; /* Show the line */
+}
+
+.header-nav .nav-item:hover {
+    color: #ffffff; 
+}
+
+.nav-item .active {
+    position: relative;
+}
+
+.nav-item .active::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: #ff0505;
+    position: absolute;
+    bottom: -5px; 
+    left: 0;
+    box-shadow: 0 0 8px #ffae00;
+    transition: left 0.3s ease-in-out, width 0.3s ease-in-out;
+}
+  
+.nav-item:not(.active)::after {
+    width: 0%;
+    left: 50%;
+}
+
+
+@media (max-width: 768px) {
+    .Header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-name {
+        margin-bottom: 10px;
+    }
+
+    .header-nav .nav-list {
+        flex-direction: column; /* Stack items vertically for small screens */
+        align-items: center; /* Center align items */
+        width: 100%;
+    }
+
+    .header-nav .nav-item a { 
+        margin: 0.5rem; /* Adjust margin for smaller screens */
+    }
+}

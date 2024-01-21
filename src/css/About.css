@@ -1,0 +1,36 @@
+.about-container {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  color: #eca1a1;
+  background-color: #24251e;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  text-align: center; /* Centering text and inline elements */
+  
+}
+
+.about-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  justify-content: center; /* Centering grid items horizontally */
+  align-items: center; /* Centering grid items vertically */
+}
+
+h2 {
+  font-size: rem;
+  color: #e7594f;
+  margin-bottom: 10px;
+  text-align: center; /* Center the h2 elements */
+  
+}
+
+.about-section ul {
+  padding-left: 20px;
+  text-align: left; /* Align list text to the left, you can change it to center if needed */
+}
+
+.about-section ul li {
+  margin-bottom: 5px;
+}

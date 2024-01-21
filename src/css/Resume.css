@@ -1,0 +1,57 @@
+.phone-container {
+  width: 450px; /* Increased from 300px */
+  height: 675px; /* Increased from 450px */
+  margin: 30px auto; /* Slightly increased margin */
+  border: 1.5px solid #333; /* Slightly thicker border */
+  border-radius: 30px; /* Increased from 20px */
+  background-color: #000;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5); /* Slightly larger shadow */
+  overflow: hidden;
+}
+
+.phone-screen {
+  padding: 30px; /* Increased from 20px */
+  color: #e0e0e0;
+  overflow-y: auto;
+  height: calc(100% - 60px); /* Adjusted for increased padding */
+}
+
+.app-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px; /* Increased from 10px */
+}
+
+.app-icon {
+  background-color: #1c1e21;
+  padding: 22px;
+  border-radius: 15px;
+  text-align: center;
+  transition: transform 0.3s, background-color 0.3s;
+  font-size: 18px;
+  width: 70px; /* Fixed width */
+  height: 70px; /* Fixed height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-icon:hover, .app-icon:focus {
+  background-color: #0071ce;
+  transform: scale(1.15);
+}
+
+
+.section-content {
+  background-color: #1c1e21;
+  padding: 22px; /* Increased from 15px */
+  border-radius: 12px; /* Increased from 8px */
+  margin-top: 30px; /* Increased from 20px */
+  display: block;
+  transition: transform 0.3s, background-color 0.3s; /* Added transition for background-color */
+}
+
+.section-content:hover {
+  transform: scale(1.1); /* Slightly larger scale on hover */
+  background-color: #196ce9;
+}

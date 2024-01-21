@@ -1,0 +1,86 @@
+.projects-container {
+    padding: 20px;
+    background-color: #121212;
+    color: #e0e0e0; 
+    overflow: auto; /* Ensures that content can expand */
+    min-height: 100vh; /* Ensures that the container takes up at least the full viewport height */
+}
+
+.projects-filter {
+    width: 200px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #1c1e21;
+    color: #e0e0e0;
+    border: 1px solid #333;
+}
+  
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px; /* Adds space at the bottom */
+}
+
+.project-card {
+    background-color: #1c1e21;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(29, 255, 123, 0.2);
+    width: 600px;
+    height: 200px;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+  
+.project-card:hover {
+    transform: translateY(-5px);
+}
+  
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+  
+.project-card h3 {
+    margin-top: 10px;
+    color: #96f1aa; 
+    font-size: 2.0rem;
+}
+  
+.project-card p {
+    font-size: 1.2rem;
+}
+  
+.project-languages {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 5px;
+}
+  
+.project-languages li {
+    background-color: #0aee71;
+    color: #121212;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 1.0rem;
+}
+
+.github-icon {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 24px; 
+    height: 24px;
+    color: #96f1aa; 
+}
+
+.github-icon img {
+    width: 100%;
+    height: auto;
+    
+}
