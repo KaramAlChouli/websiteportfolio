@@ -16,7 +16,7 @@ function Home() {
           value: 20,
           density: {
             enable: true,
-            value_area: 800
+            value_area: 80
           }
         },
         color: {
@@ -40,7 +40,7 @@ function Home() {
         },
         modes: {
           repulse: {
-            distance: 270,
+            distance: 100,
             duration: 5
           },
           // other modes like bubble, push, etc.
