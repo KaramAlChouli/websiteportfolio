@@ -5,54 +5,13 @@ import Header from './Header';
 import Projects from './Projects';
 import Resume from './Resume';
 import About from './About';
-import Particles from 'particles.js';
+
 import profilePic from './images/image.png';
 
 function Home() {
-  useEffect(() => {
-    window.particlesJS('particles-js', {
-      particles: {
-        number: {
-          value: 20,
-          density: {
-            enable: true,
-            value_area: 80
-          }
-        },
-        color: {
-          value: "#34e0ad"
-          
-        },
-        size: {
-          value: 50,
-          random: true
-        },
-        // ... other particle settings
-      },
-      interactivity: {
-        detect_on: "window", // or 'canvas'
-        events: {
-          onhover: {
-            enable: true,
-            mode: "repulse"
-          },
-          // other events like onclick
-        },
-        modes: {
-          repulse: {
-            distance: 100,
-            duration: 5
-          },
-          // other modes like bubble, push, etc.
-        }
-      }
-      ,
-      // ... other config options
-    });
-  }, []);
+
   return (
     <div className="home-container">
-      <div id="particles-js" className="particles-container"></div>
       <div className="home-content">
         <div className="intro-text">
           <h1 className="bouncing-text">Karam Al-Chouli</h1>

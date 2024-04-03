@@ -25,12 +25,6 @@ const projectsData = [
       repoUrl: "https://github.com/KaramAlChouli/CryptoDataCollector"
     },
     {
-      name: "GTA Real Estate Predictions",
-      description: "Analyzes and predicts Toronto's real estate prices using Python, pandas, sklearn, and matplotlib for data processing and visualization.",
-      languages: ["Python", "Data Analysis"],
-      repoUrl: "https://github.com/hamaadasif/GTARealEstatePredicition"
-    },
-    {
       name: "Karam Al-Chouli Portfolio Website",
       description: "The website you're currently on.",
       languages: ["JavaScript","React"],
